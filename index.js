@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const PORT = process.env.PORT || 3007;
+const PORT = process.env.PORT || 3006;
 
 const ok = (res, data, status = 200) => res.status(status).json({ success: true, ...data });
 const err = (res, message, status = 400) => res.status(status).json({ success: false, message });
